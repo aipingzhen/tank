@@ -2,6 +2,7 @@ package com.solitary.tank;
 
 public class Main {
 
+    //运行类
     public static void main(String[] args) {
         TankFrame tf = new TankFrame();
         while (true) {

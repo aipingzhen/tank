@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+//方块运行
 public class TankFrame extends Frame {
 
     int x = 200, y = 200;
