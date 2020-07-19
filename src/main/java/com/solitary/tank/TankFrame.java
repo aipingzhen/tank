@@ -11,6 +11,9 @@ public class TankFrame extends Frame {
 
     int x = 200, y = 200;
 
+    Dir dir = Dir.DOWN;
+
+    private static final int SPEED = 10;
 
     public TankFrame() throws HeadlessException {
 
@@ -80,10 +83,24 @@ public class TankFrame extends Frame {
      * */
     @Override
     public void paint(Graphics g) {
-        System.out.println("paint");
         g.fillRect(x, y, 50, 50);
-        //x += 10;
-        //y += 10;
+        switch (dir) {
+            case LEFT:
+                x -= SPEED;
+                break;
+            case RIGHT:
+                y -= SPEED;
+                break;
+            case UP:
+                x += SPEED;
+                break;
+            case DOWN:
+                y += SPEED;
+                break;
+            default:
+                break;
+
+        }
     }
 
 
@@ -111,7 +128,7 @@ public class TankFrame extends Frame {
          * 然后再转化为我们能理解的 方向关系 这样的思考方式
          * <p>
          * 你再快也一定有先后关系的 因为计算机的最慢毫秒级速度你都跟不上
-         *
+         * <p>
          * 沿着思路去独立完成
          */
         boolean bL = false;
@@ -139,7 +156,7 @@ public class TankFrame extends Frame {
                     break;
             }
 
-
+            setMainTankDir();
 
         }
 
@@ -162,8 +179,24 @@ public class TankFrame extends Frame {
                 default:
                     break;
             }
+            setMainTankDir();
         }
 
+        private void setMainTankDir() {
+            if (bL) {
+                dir = Dir.LEFT;
+            }
+            if (bU) {
+                dir = Dir.UP;
+            }
+            if (bR) {
+                dir = Dir.RIGHT;
+            }
+            if (bD) {
+                dir = Dir.DOWN;
+            }
+        }
     }
+
 
 }
