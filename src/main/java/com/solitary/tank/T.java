@@ -21,7 +21,7 @@ public class T {
         //这个时候就要理解每个类的作用  就是不同的输入和输出
         //根据中控来导出 音频 视频 文字  所有的指令化作面向对象 面向处理器的操作
         //分配给处理器
-        
+
         f.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
