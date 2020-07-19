@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a0111ab7-269d-4aac-96f4-696622cf1fdf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +84,18 @@
       <updated>1595059201657</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2012" y="507" key="#com.intellij.ide.util.MemberChooser" timestamp="1595141811725">
